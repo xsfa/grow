@@ -9,12 +9,26 @@ import SwiftUI
 import RealityKit
 
 struct ContentView : View {
-    var models: [String] = ["newtree", "mediumtree", "largetree"]
+    var timers: [String] = ["10", "15", "25"]
     var body: some View {
-        ARViewContainer()
-        Text("Hello")
-        Text("It's a great day to grow")
-        
+        ZStack(alignment: .bottom) {
+            ARViewContainer()
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 45) {
+                    ForEach(0 ..< self.timers.count) {
+                        index in
+                        Button(action: {
+                            print("timer selected\(self.timers[index])")
+                        }) {
+                            Image(uiImage: UIImage(named: self.timers[index])!)
+                            .resizable()
+                                .frame(height:80).aspectRatio(1/1,contentMode:.fit)
+                        }.buttonStyle(PlainButtonStyle())
+                    }
+                }
+            }
+        }
     }
     
    
@@ -25,6 +39,7 @@ func TimerMaker() {
            //     self.value += 1
     }
 }
+
 
 
 struct ARViewContainer: UIViewRepresentable {
