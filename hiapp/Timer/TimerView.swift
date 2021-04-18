@@ -15,7 +15,7 @@ struct TimerView: View {
             Text("\(format(duration: userTime.currentTime.timeIntervalSince(userTime.startTime)))")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-            ARViewContainer(selectedModel: "tree1.usdz")
+            ARViewContainer(selectedModel: "tree5.usdz")
                 
         }
             

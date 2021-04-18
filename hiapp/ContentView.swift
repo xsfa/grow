@@ -76,14 +76,14 @@ func TimeListener(countdown :Int) {
 
 
 struct ARViewContainer: UIViewRepresentable {
-    @Binding var selectedModel : String?
+     var selectedModel : String?
     
     func makeUIView(context: Context) -> ARView {
         
         let arView = ARView(frame: .zero)
         
         let config = ARWorldTrackingConfiguration()
-        config.planeDetection = [.horizontal, .vertical]
+        config.planeDetection = [.horizontal]
         config.environmentTexturing = .automatic
         
         if
