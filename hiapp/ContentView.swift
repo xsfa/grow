@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RealityKit
+import ARKit
 
 struct ContentView : View {
     
@@ -15,6 +16,8 @@ struct ContentView : View {
     var timers: [String] = ["10", "15", "25"]
     @State var TimerAppear : Bool = false
     @State var SelectedIndex : Int = -1;
+    @State var selectedModel : String?
+
     
     
     var body: some View {
@@ -31,6 +34,8 @@ struct ContentView : View {
                             index in
                             Button(action: {
                                 print("timer selected\(self.timers[index])")
+                                self.selectedModel = self.models[0]
+                                
                                 if self.timers[index] == "10" {
                                     SelectedIndex = 10
                                 } else if self.timers[index] == "15" {
@@ -52,6 +57,9 @@ struct ContentView : View {
         
     }
     
+    func resetPlacement() {
+        self.selectedModel = nil
+    }
    
 }
 
@@ -68,16 +76,39 @@ func TimeListener(countdown :Int) {
 
 
 struct ARViewContainer: UIViewRepresentable {
+    @Binding var selectedModel : String?
     
     func makeUIView(context: Context) -> ARView {
         
         let arView = ARView(frame: .zero)
         
+        let config = ARWorldTrackingConfiguration()
+        config.planeDetection = [.horizontal, .vertical]
+        config.environmentTexturing = .automatic
+        
+        if
+            ARWorldTrackingConfiguration
+                .supportsSceneReconstruction(.mesh) {
+            config.sceneReconstruction = .mesh
+        }
+        
+        arView.session.run(config)
+        
         return arView
         
     }
     
-    func updateUIView(_ uiView: ARView, context: Context) {}
+    func updateUIView(_ uiView: ARView, context: Context) {
+        if let modelName = self.selectedModel {
+            print("Adding model\(modelName)")
+            
+            let modelEntity = try!
+                ModelEntity.loadModel(named:modelName)
+            
+            let anchorEnity = AnchorEntity(plane: .any)
+            anchorEnity.addChild(modelEntity)
+        }
+    }
     
 }
 
