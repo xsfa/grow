@@ -95,7 +95,7 @@ struct ARViewContainer: UIViewRepresentable {
             config.sceneReconstruction = .mesh
         }
         
-        //arView.session.run(config)
+        arView.session.run(config)
         
         return arView
         
