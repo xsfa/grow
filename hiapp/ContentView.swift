@@ -107,6 +107,8 @@ struct ARViewContainer: UIViewRepresentable {
             
             let anchorEnity = AnchorEntity(plane: .any)
             anchorEnity.addChild(modelEntity)
+            
+            uiView.scene.addAnchor(anchorEnity)
         }
     }
     
