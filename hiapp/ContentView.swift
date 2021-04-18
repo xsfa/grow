@@ -24,8 +24,6 @@ struct ContentView : View {
             }
             
             ZStack(alignment: .bottom) {
-                ARViewContainer()
-               
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 45) {
                         

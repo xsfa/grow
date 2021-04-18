@@ -11,9 +11,13 @@ struct TimerView: View {
     @State var time :Int
     @ObservedObject var userTime = UserTime()
     var body: some View {
-        Text("\(format(duration: userTime.currentTime.timeIntervalSince(userTime.startTime)))")
-            .font(.largeTitle)
-            .fontWeight(.bold)
+        VStack{
+            Text("\(format(duration: userTime.currentTime.timeIntervalSince(userTime.startTime)))")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            ARViewContainer()
+                
+        }
             
     }
 }
