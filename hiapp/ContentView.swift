@@ -25,10 +25,11 @@ struct ContentView : View {
         VStack(spacing: 35) {
             if TimerAppear == true {
                 TimerView(time: SelectedIndex, userTime: userTime)
+                    
             }
             
             else{
-                Text("Welcome to Grow.io")
+                Text("Welcome to Grow.io!")
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .font(.largeTitle)
                 Spacer()
@@ -36,7 +37,7 @@ struct ContentView : View {
             
             ZStack() {
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 25) {
+                    HStack(spacing: 28) {
                         ForEach(0 ..< self.timers.count) {
                             index in
                             Button(action: {
@@ -71,7 +72,7 @@ struct ContentView : View {
                                     .frame(height:80)
                                     .aspectRatio(1/1,contentMode:.fit)
                             }.buttonStyle(PlainButtonStyle())
-                        }
+                        }.padding(4)
                     }
                 }
             }
