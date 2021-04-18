@@ -23,7 +23,6 @@
 		498339FB262BA92F00FAC75A /* tree4.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 498339F2262BA92F00FAC75A /* tree4.usdz */; };
 		498339FC262BA92F00FAC75A /* stump2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 498339F3262BA92F00FAC75A /* stump2.usdz */; };
 		498339FD262BA92F00FAC75A /* deadtree1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 498339F4262BA92F00FAC75A /* deadtree1.usdz */; };
-		AF0C4A70262B88D900704733 /* newtree.usdz in Resources */ = {isa = PBXBuildFile; fileRef = AF0C4A6F262B88D900704733 /* newtree.usdz */; };
 		AF0C4A7D262B891A00704733 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C4A7C262B891A00704733 /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +66,6 @@
 		498339F2262BA92F00FAC75A /* tree4.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = tree4.usdz; path = ../../../../../Desktop/convertedfbx/tree4.usdz; sourceTree = "<group>"; };
 		498339F3262BA92F00FAC75A /* stump2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = stump2.usdz; path = ../../../../../Desktop/convertedfbx/stump2.usdz; sourceTree = "<group>"; };
 		498339F4262BA92F00FAC75A /* deadtree1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = deadtree1.usdz; path = ../../../../../Desktop/convertedfbx/deadtree1.usdz; sourceTree = "<group>"; };
-		AF0C4A6F262B88D900704733 /* newtree.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = newtree.usdz; sourceTree = "<group>"; };
 		AF0C4A7C262B891A00704733 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,7 +166,6 @@
 				498339ED262BA92F00FAC75A /* tree3.usdz */,
 				498339F2262BA92F00FAC75A /* tree4.usdz */,
 				498339EC262BA92F00FAC75A /* tree5.usdz */,
-				AF0C4A6F262B88D900704733 /* newtree.usdz */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,7 +285,6 @@
 				498339A9262B6C3B00FAC75A /* Preview Assets.xcassets in Resources */,
 				498339F6262BA92F00FAC75A /* tree3.usdz in Resources */,
 				498339F8262BA92F00FAC75A /* deadtree2.usdz in Resources */,
-				AF0C4A70262B88D900704733 /* newtree.usdz in Resources */,
 				498339A6262B6C3B00FAC75A /* Assets.xcassets in Resources */,
 				498339F5262BA92F00FAC75A /* tree5.usdz in Resources */,
 				498339FB262BA92F00FAC75A /* tree4.usdz in Resources */,
