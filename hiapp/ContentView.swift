@@ -15,21 +15,28 @@ struct ContentView : View {
     
     var models: [String] = ["stump2.usdz", "stump1.usdz", "deadtree.usdz", "tree3.usdz", "tree2.usdz", "tree5.usdz", "tree1.usdz"]
     
-    var timers: [String] = ["10", "15", "25"]
+    var timers: [String] = ["10", "15", "25","45","60","120","180"]
     @State var TimerAppear : Bool = false
     
     @State var selectedModel : String?
     @ObservedObject var userTime : UserTime = UserTime()
     
     var body: some View {
-        VStack(spacing: 60) {
+        VStack(spacing: 35) {
             if TimerAppear == true {
                 TimerView(time: SelectedIndex, userTime: userTime)
             }
             
-            ZStack(alignment: .bottom) {
+            else{
+                Text("Welcome to Grow.io")
+                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    .font(.largeTitle)
+                Spacer()
+            }
+            
+            ZStack() {
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 45) {
+                    HStack(spacing: 25) {
                         ForEach(0 ..< self.timers.count) {
                             index in
                             Button(action: {
@@ -42,6 +49,18 @@ struct ContentView : View {
                                     SelectedIndex = 15
                                 } else if self.timers[index] == "25" {
                                     SelectedIndex = 25
+                                }
+                                else if self.timers[index] == "45" {
+                                    SelectedIndex = 45
+                                }
+                                else if self.timers[index] == "60" {
+                                    SelectedIndex = 60
+                                }
+                                else if self.timers[index] == "120" {
+                                    SelectedIndex = 120
+                                }
+                                else if self.timers[index] == "180" {
+                                    SelectedIndex = 180
                                 }
                                 TimerAppear = true
                                 userTime.duration = SelectedIndex 
@@ -83,8 +102,7 @@ struct ARViewContainer: UIViewRepresentable {
     
     func makeUIView(context: Context) -> ARView {
         
-        let arView = ARView(frame: .zero)
-        
+        let arView = ARView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 1/3))
         let config = ARWorldTrackingConfiguration()
         config.planeDetection = [.horizontal]
         config.environmentTexturing = .automatic

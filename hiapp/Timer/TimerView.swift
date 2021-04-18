@@ -16,9 +16,10 @@ struct TimerView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
             ARViewContainer(selectedModel: userTime.model)
-                
+               
         }
     }
+        
 }
 
 
