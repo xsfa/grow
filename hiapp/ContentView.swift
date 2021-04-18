@@ -17,19 +17,17 @@ struct ContentView : View {
     @State var TimerAppear : Bool = false
     @State var SelectedIndex : Int = -1;
     @State var selectedModel : String?
-
-    
+    @ObservedObject var userTime : UserTime = UserTime()
     
     var body: some View {
         VStack(spacing: 60) {
             if TimerAppear == true {
-                TimerView(time: SelectedIndex)
+                TimerView(time: SelectedIndex, userTime: userTime)
             }
             
             ZStack(alignment: .bottom) {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 45) {
-                        
                         ForEach(0 ..< self.timers.count) {
                             index in
                             Button(action: {
@@ -44,10 +42,13 @@ struct ContentView : View {
                                     SelectedIndex = 25
                                 }
                                 TimerAppear = true
+                                userTime.duration = SelectedIndex 
+                                userTime.start()
                             }) {
                                 Image(uiImage: UIImage(named: self.timers[index])!)
-                                .resizable()
-                                    .frame(height:80).aspectRatio(1/1,contentMode:.fit)
+                                    .resizable()
+                                    .frame(height:80)
+                                    .aspectRatio(1/1,contentMode:.fit)
                             }.buttonStyle(PlainButtonStyle())
                         }
                     }

@@ -9,16 +9,15 @@ import SwiftUI
 
 struct TimerView: View {
     @State var time :Int
-    @ObservedObject var userTime = UserTime()
+    @StateObject var userTime : UserTime
     var body: some View {
         VStack{
             Text("\(format(duration: userTime.currentTime.timeIntervalSince(userTime.startTime)))")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-            ARViewContainer(selectedModel: "tree5.usdz")
+            ARViewContainer(selectedModel: userTime.model)
                 
         }
-            
     }
 }
 
@@ -34,6 +33,6 @@ func format(duration: TimeInterval) -> String {
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView(time:10)
+        TimerView(time:10,userTime: UserTime())
     }
 }
