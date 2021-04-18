@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0BBF9F45-1436-47A4-B5B8-352349283EBC"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D14F8549-6477-4CBF-B7D0-9D891D440150"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "hiapp/Timer/Timer.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
+            landmarkName = "UserTime"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "D14F8549-6477-4CBF-B7D0-9D891D440150 - c37f359cef31cf03"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "hiapp.UserTime.deinit"
+                  moduleName = "hiapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mathew/Desktop/grow/hiapp/Timer/Timer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "D14F8549-6477-4CBF-B7D0-9D891D440150 - 88740fd8259b9c7c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "hiapp.UserTime.__deallocating_deinit"
+                  moduleName = "hiapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mathew/Desktop/grow/hiapp/Timer/Timer.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
