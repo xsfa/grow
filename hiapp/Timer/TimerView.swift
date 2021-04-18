@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TimerView: View {
+    @State var time :Int
     @ObservedObject var userTime = UserTime()
     var body: some View {
         Text("\(format(duration: userTime.currentTime.timeIntervalSince(userTime.startTime)))")
@@ -29,6 +30,6 @@ func format(duration: TimeInterval) -> String {
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView()
+        TimerView(time:10)
     }
 }

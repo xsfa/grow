@@ -9,26 +9,49 @@ import SwiftUI
 import RealityKit
 
 struct ContentView : View {
+    
+    var models: [String] = ["stump2.usdz", "stump1.usdz", "deadtree.usdz", "tree3.usdz", "tree2.usdz", "tree5.usdz", "tree1.usdz"]
+    
     var timers: [String] = ["10", "15", "25"]
+    @State var TimerAppear : Bool = false
+    @State var SelectedIndex : Int = -1;
+    
+    
     var body: some View {
-        ZStack(alignment: .bottom) {
-            ARViewContainer()
+        VStack(spacing: 60) {
+            if TimerAppear == true {
+                TimerView(time: SelectedIndex)
+            }
             
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 45) {
-                    ForEach(0 ..< self.timers.count) {
-                        index in
-                        Button(action: {
-                            print("timer selected\(self.timers[index])")
-                        }) {
-                            Image(uiImage: UIImage(named: self.timers[index])!)
-                            .resizable()
-                                .frame(height:80).aspectRatio(1/1,contentMode:.fit)
-                        }.buttonStyle(PlainButtonStyle())
+            ZStack(alignment: .bottom) {
+                ARViewContainer()
+               
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 45) {
+                        
+                        ForEach(0 ..< self.timers.count) {
+                            index in
+                            Button(action: {
+                                print("timer selected\(self.timers[index])")
+                                if self.timers[index] == "10" {
+                                    SelectedIndex = 10
+                                } else if self.timers[index] == "15" {
+                                    SelectedIndex = 15
+                                } else if self.timers[index] == "25" {
+                                    SelectedIndex = 25
+                                }
+                                TimerAppear = true
+                            }) {
+                                Image(uiImage: UIImage(named: self.timers[index])!)
+                                .resizable()
+                                    .frame(height:80).aspectRatio(1/1,contentMode:.fit)
+                            }.buttonStyle(PlainButtonStyle())
+                        }
                     }
                 }
             }
         }
+        
     }
     
    
@@ -38,6 +61,10 @@ func TimerMaker() {
     Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
            //     self.value += 1
     }
+}
+
+func TimeListener(countdown :Int) {
+    
 }
 
 

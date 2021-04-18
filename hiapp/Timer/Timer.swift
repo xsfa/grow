@@ -12,6 +12,10 @@ class UserTime: ObservableObject{
             timer in
             self.currentTime += 1
             //self.differenceTime = self.currentTime.timeIntervalSince(self.startTime)
+            
+            
         }
+        
+        
     }
 }

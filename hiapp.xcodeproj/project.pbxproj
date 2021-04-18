@@ -14,6 +14,15 @@
 		498339B4262B6C3C00FAC75A /* hiappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498339B3262B6C3C00FAC75A /* hiappTests.swift */; };
 		498339BF262B6C3C00FAC75A /* hiappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498339BE262B6C3C00FAC75A /* hiappUITests.swift */; };
 		498339E2262B856C00FAC75A /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498339E1262B856C00FAC75A /* Timer.swift */; };
+		498339F5262BA92F00FAC75A /* tree5.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 498339EC262BA92F00FAC75A /* tree5.usdz */; };
+		498339F6262BA92F00FAC75A /* tree3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 498339ED262BA92F00FAC75A /* tree3.usdz */; };
+		498339F7262BA92F00FAC75A /* stump1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 498339EE262BA92F00FAC75A /* stump1.usdz */; };
+		498339F8262BA92F00FAC75A /* deadtree2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 498339EF262BA92F00FAC75A /* deadtree2.usdz */; };
+		498339F9262BA92F00FAC75A /* tree1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 498339F0262BA92F00FAC75A /* tree1.usdz */; };
+		498339FA262BA92F00FAC75A /* tree2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 498339F1262BA92F00FAC75A /* tree2.usdz */; };
+		498339FB262BA92F00FAC75A /* tree4.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 498339F2262BA92F00FAC75A /* tree4.usdz */; };
+		498339FC262BA92F00FAC75A /* stump2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 498339F3262BA92F00FAC75A /* stump2.usdz */; };
+		498339FD262BA92F00FAC75A /* deadtree1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 498339F4262BA92F00FAC75A /* deadtree1.usdz */; };
 		AF0C4A70262B88D900704733 /* newtree.usdz in Resources */ = {isa = PBXBuildFile; fileRef = AF0C4A6F262B88D900704733 /* newtree.usdz */; };
 		AF0C4A7D262B891A00704733 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0C4A7C262B891A00704733 /* TimerView.swift */; };
 /* End PBXBuildFile section */
@@ -49,6 +58,15 @@
 		498339BE262B6C3C00FAC75A /* hiappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hiappUITests.swift; sourceTree = "<group>"; };
 		498339C0262B6C3C00FAC75A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		498339E1262B856C00FAC75A /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		498339EC262BA92F00FAC75A /* tree5.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = tree5.usdz; path = ../../../../../Desktop/convertedfbx/tree5.usdz; sourceTree = "<group>"; };
+		498339ED262BA92F00FAC75A /* tree3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = tree3.usdz; path = ../../../../../Desktop/convertedfbx/tree3.usdz; sourceTree = "<group>"; };
+		498339EE262BA92F00FAC75A /* stump1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = stump1.usdz; path = ../../../../../Desktop/convertedfbx/stump1.usdz; sourceTree = "<group>"; };
+		498339EF262BA92F00FAC75A /* deadtree2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = deadtree2.usdz; path = ../../../../../Desktop/convertedfbx/deadtree2.usdz; sourceTree = "<group>"; };
+		498339F0262BA92F00FAC75A /* tree1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = tree1.usdz; path = ../../../../../Desktop/convertedfbx/tree1.usdz; sourceTree = "<group>"; };
+		498339F1262BA92F00FAC75A /* tree2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = tree2.usdz; path = ../../../../../Desktop/convertedfbx/tree2.usdz; sourceTree = "<group>"; };
+		498339F2262BA92F00FAC75A /* tree4.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = tree4.usdz; path = ../../../../../Desktop/convertedfbx/tree4.usdz; sourceTree = "<group>"; };
+		498339F3262BA92F00FAC75A /* stump2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = stump2.usdz; path = ../../../../../Desktop/convertedfbx/stump2.usdz; sourceTree = "<group>"; };
+		498339F4262BA92F00FAC75A /* deadtree1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = deadtree1.usdz; path = ../../../../../Desktop/convertedfbx/deadtree1.usdz; sourceTree = "<group>"; };
 		AF0C4A6F262B88D900704733 /* newtree.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = newtree.usdz; sourceTree = "<group>"; };
 		AF0C4A7C262B891A00704733 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +159,15 @@
 		498339D2262B74FB00FAC75A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				498339F4262BA92F00FAC75A /* deadtree1.usdz */,
+				498339EF262BA92F00FAC75A /* deadtree2.usdz */,
+				498339EE262BA92F00FAC75A /* stump1.usdz */,
+				498339F3262BA92F00FAC75A /* stump2.usdz */,
+				498339F0262BA92F00FAC75A /* tree1.usdz */,
+				498339F1262BA92F00FAC75A /* tree2.usdz */,
+				498339ED262BA92F00FAC75A /* tree3.usdz */,
+				498339F2262BA92F00FAC75A /* tree4.usdz */,
+				498339EC262BA92F00FAC75A /* tree5.usdz */,
 				AF0C4A6F262B88D900704733 /* newtree.usdz */,
 			);
 			path = Models;
@@ -259,8 +286,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				498339A9262B6C3B00FAC75A /* Preview Assets.xcassets in Resources */,
+				498339F6262BA92F00FAC75A /* tree3.usdz in Resources */,
+				498339F8262BA92F00FAC75A /* deadtree2.usdz in Resources */,
 				AF0C4A70262B88D900704733 /* newtree.usdz in Resources */,
 				498339A6262B6C3B00FAC75A /* Assets.xcassets in Resources */,
+				498339F5262BA92F00FAC75A /* tree5.usdz in Resources */,
+				498339FB262BA92F00FAC75A /* tree4.usdz in Resources */,
+				498339FC262BA92F00FAC75A /* stump2.usdz in Resources */,
+				498339F7262BA92F00FAC75A /* stump1.usdz in Resources */,
+				498339FD262BA92F00FAC75A /* deadtree1.usdz in Resources */,
+				498339FA262BA92F00FAC75A /* tree2.usdz in Resources */,
+				498339F9262BA92F00FAC75A /* tree1.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
