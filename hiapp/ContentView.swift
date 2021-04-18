@@ -9,13 +9,15 @@ import SwiftUI
 import RealityKit
 import ARKit
 
+var SelectedIndex : Int = -1
+
 struct ContentView : View {
     
     var models: [String] = ["stump2.usdz", "stump1.usdz", "deadtree.usdz", "tree3.usdz", "tree2.usdz", "tree5.usdz", "tree1.usdz"]
     
     var timers: [String] = ["10", "15", "25"]
     @State var TimerAppear : Bool = false
-    @State var SelectedIndex : Int = -1;
+    
     @State var selectedModel : String?
     @ObservedObject var userTime : UserTime = UserTime()
     
@@ -93,7 +95,7 @@ struct ARViewContainer: UIViewRepresentable {
             config.sceneReconstruction = .mesh
         }
         
-        arView.session.run(config)
+        //arView.session.run(config)
         
         return arView
         
@@ -106,10 +108,10 @@ struct ARViewContainer: UIViewRepresentable {
             let modelEntity = try!
                 ModelEntity.loadModel(named:modelName)
             
-            let anchorEnity = AnchorEntity(plane: .any)
-            anchorEnity.addChild(modelEntity)
+            //let anchorEnity = AnchorEntity(plane: .any)
+            //anchorEnity.addChild(modelEntity)
             
-            uiView.scene.addAnchor(anchorEnity)
+            //uiView.scene.addAnchor(anchorEnity)
         }
     }
     
